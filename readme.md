@@ -35,6 +35,13 @@ empleados.adalbertovargas
 	- admin@admin.com 
 	- password
 
+* REST API
+	- host/api/empleados
+	- host/api/habilidades
+
+* Notas:
+	- No quedó completada la funcionalidad para Registrar calificación de habilidades de los empleados.
+
 ### Contribution guidelines & documentation ###
 
 

@@ -10,7 +10,7 @@ Target Server Type    : MYSQL
 Target Server Version : 50505
 File Encoding         : 65001
 
-Date: 2018-11-26 13:50:49
+Date: 2018-11-26 14:58:35
 */
 
 SET FOREIGN_KEY_CHECKS=0;
@@ -64,7 +64,6 @@ INSERT INTO `data_rows` VALUES ('20', '3', 'updated_at', 'timestamp', 'Updated A
 INSERT INTO `data_rows` VALUES ('21', '3', 'display_name', 'text', 'Display Name', '1', '1', '1', '1', '1', '1', null, '5');
 INSERT INTO `data_rows` VALUES ('22', '1', 'role_id', 'text', 'Role', '1', '1', '1', '1', '1', '1', null, '9');
 INSERT INTO `data_rows` VALUES ('57', '7', 'id', 'text', 'Id', '1', '1', '1', '0', '0', '0', '{}', '1');
-INSERT INTO `data_rows` VALUES ('58', '7', 'uuid', 'text', 'Uuid', '1', '1', '1', '0', '1', '0', '{}', '2');
 INSERT INTO `data_rows` VALUES ('59', '7', 'nombre', 'text', 'Nombre', '1', '1', '1', '1', '1', '1', '{}', '3');
 INSERT INTO `data_rows` VALUES ('60', '7', 'email', 'text', 'Email', '1', '1', '1', '1', '1', '1', '{}', '4');
 INSERT INTO `data_rows` VALUES ('61', '7', 'puesto', 'text', 'Puesto', '1', '1', '1', '1', '1', '1', '{}', '5');
@@ -73,7 +72,6 @@ INSERT INTO `data_rows` VALUES ('63', '7', 'domicilio', 'text', 'Domicilio', '1'
 INSERT INTO `data_rows` VALUES ('65', '7', 'created_at', 'timestamp', 'Created At', '0', '1', '1', '0', '0', '0', '{}', '9');
 INSERT INTO `data_rows` VALUES ('66', '7', 'updated_at', 'timestamp', 'Updated At', '0', '1', '1', '0', '0', '0', '{}', '10');
 INSERT INTO `data_rows` VALUES ('67', '8', 'id', 'text', 'Id', '1', '1', '1', '0', '0', '0', '{}', '1');
-INSERT INTO `data_rows` VALUES ('68', '8', 'uuid', 'text', 'Uuid', '1', '1', '1', '0', '1', '0', '{}', '2');
 INSERT INTO `data_rows` VALUES ('69', '8', 'nombre', 'text', 'Nombre', '1', '1', '1', '1', '1', '1', '{}', '3');
 INSERT INTO `data_rows` VALUES ('70', '8', 'created_at', 'timestamp', 'Created At', '0', '1', '1', '0', '0', '0', '{}', '4');
 INSERT INTO `data_rows` VALUES ('71', '8', 'updated_at', 'timestamp', 'Updated At', '0', '1', '1', '0', '0', '0', '{}', '5');
@@ -119,7 +117,6 @@ INSERT INTO `data_types` VALUES ('8', 'habilidades', 'habilidades', 'Habilidad',
 DROP TABLE IF EXISTS `empleados`;
 CREATE TABLE `empleados` (
   `id` int(10) unsigned NOT NULL AUTO_INCREMENT,
-  `uuid` char(36) COLLATE utf8mb4_unicode_ci NOT NULL,
   `nombre` varchar(191) COLLATE utf8mb4_unicode_ci NOT NULL,
   `email` varchar(255) COLLATE utf8mb4_unicode_ci NOT NULL,
   `puesto` varchar(191) COLLATE utf8mb4_unicode_ci NOT NULL,
@@ -133,8 +130,8 @@ CREATE TABLE `empleados` (
 -- ----------------------------
 -- Records of empleados
 -- ----------------------------
-INSERT INTO `empleados` VALUES ('1', '8312bc59-6a10-47ac-9fdc-ac8f8962643f', 'Rodrigo Perea', 'rodrigo@gmail.com', 'Front-End Developer', '1990-03-06', 'Calle 41 Edif. 5 Dep. 4 Col. Tecolutla. C.P. 24170, Ciudad Del Carmen, Campeche, México', '2018-11-26 19:31:54', '2018-11-26 19:31:54');
-INSERT INTO `empleados` VALUES ('2', 'e7a0a0b2-7594-40d4-ab4d-8d59abf9f616', 'Rogelio Medina', 'rogelio@gmail.com', 'Backend Developer', '1988-04-10', 'Oriente 202, La Cañada, Tulancingo de Bravo, Hidalgo México', '2018-11-26 19:34:21', '2018-11-26 19:34:21');
+INSERT INTO `empleados` VALUES ('1', 'Rodrigo Perea', 'rodrigo@gmail.com', 'Front-End Developer', '1990-03-08', 'Calle 41 Edif. 5 Dep. 4 Col. Tecolutla. C.P. 24170, Ciudad Del Carmen, Campeche, México', '2018-11-26 19:31:54', '2018-11-26 20:51:42');
+INSERT INTO `empleados` VALUES ('2', 'Rogelio Medina', 'rogelio@gmail.com', 'Backend Developer', '1988-04-10', 'Oriente 202, La Cañada, Tulancingo de Bravo, Hidalgo México', '2018-11-26 19:34:21', '2018-11-26 19:34:21');
 
 -- ----------------------------
 -- Table structure for empleado_habilidad
@@ -149,13 +146,13 @@ CREATE TABLE `empleado_habilidad` (
 -- ----------------------------
 -- Records of empleado_habilidad
 -- ----------------------------
-INSERT INTO `empleado_habilidad` VALUES ('1', '5', null);
-INSERT INTO `empleado_habilidad` VALUES ('1', '6', null);
-INSERT INTO `empleado_habilidad` VALUES ('1', '11', null);
-INSERT INTO `empleado_habilidad` VALUES ('1', '14', null);
-INSERT INTO `empleado_habilidad` VALUES ('2', '1', null);
-INSERT INTO `empleado_habilidad` VALUES ('2', '2', null);
-INSERT INTO `empleado_habilidad` VALUES ('2', '10', null);
+INSERT INTO `empleado_habilidad` VALUES ('1', '5', '4');
+INSERT INTO `empleado_habilidad` VALUES ('1', '6', '3');
+INSERT INTO `empleado_habilidad` VALUES ('1', '11', '2');
+INSERT INTO `empleado_habilidad` VALUES ('1', '14', '4');
+INSERT INTO `empleado_habilidad` VALUES ('2', '1', '5');
+INSERT INTO `empleado_habilidad` VALUES ('2', '2', '3');
+INSERT INTO `empleado_habilidad` VALUES ('2', '10', '2');
 
 -- ----------------------------
 -- Table structure for habilidades
@@ -163,7 +160,6 @@ INSERT INTO `empleado_habilidad` VALUES ('2', '10', null);
 DROP TABLE IF EXISTS `habilidades`;
 CREATE TABLE `habilidades` (
   `id` int(10) unsigned NOT NULL AUTO_INCREMENT,
-  `uuid` char(36) COLLATE utf8mb4_unicode_ci NOT NULL,
   `nombre` varchar(255) COLLATE utf8mb4_unicode_ci NOT NULL,
   `created_at` timestamp NULL DEFAULT NULL,
   `updated_at` timestamp NULL DEFAULT NULL,
@@ -173,23 +169,23 @@ CREATE TABLE `habilidades` (
 -- ----------------------------
 -- Records of habilidades
 -- ----------------------------
-INSERT INTO `habilidades` VALUES ('1', '89195cdd-310e-4d9e-84b4-851a3b021ca9', 'PHP', '2018-11-26 19:18:22', '2018-11-26 19:18:22');
-INSERT INTO `habilidades` VALUES ('2', 'a5d2dd94-a69e-4b5d-b564-b9cfa93e7daf', 'Laravel', '2018-11-26 19:18:57', '2018-11-26 19:18:57');
-INSERT INTO `habilidades` VALUES ('3', '963a5f20-8b5b-47c8-ae9e-dd5fce3b8f4b', 'API RESTFUL', '2018-11-26 19:19:09', '2018-11-26 19:19:09');
-INSERT INTO `habilidades` VALUES ('4', '9e43f2c4-602a-4050-9ac2-42eb29694a51', 'HTML5', '2018-11-26 19:19:33', '2018-11-26 19:19:33');
-INSERT INTO `habilidades` VALUES ('5', '39d7e0df-f564-4d69-ad8c-6904656a8673', 'CSS3', '2018-11-26 19:19:47', '2018-11-26 19:19:47');
-INSERT INTO `habilidades` VALUES ('6', '3c9edc47-d956-4cc6-9b76-3efd653bb187', 'jQuery', '2018-11-26 19:20:01', '2018-11-26 19:20:01');
-INSERT INTO `habilidades` VALUES ('7', '8c8372a9-2a64-4236-8ffe-4769e767ebf0', 'AJAX', '2018-11-26 19:20:23', '2018-11-26 19:20:23');
-INSERT INTO `habilidades` VALUES ('8', '587cb7dd-0dad-4dd9-a606-4fd0a5ba4ced', 'JavaScript', '2018-11-26 19:20:40', '2018-11-26 19:20:40');
-INSERT INTO `habilidades` VALUES ('9', 'c7505aac-8979-4fe0-9a99-e88388c41105', 'MySQL', '2018-11-26 19:20:58', '2018-11-26 19:20:58');
-INSERT INTO `habilidades` VALUES ('10', '94a3dc2b-127a-4597-9644-a9e384912408', 'SSH', '2018-11-26 19:21:19', '2018-11-26 19:21:19');
-INSERT INTO `habilidades` VALUES ('11', '40d36f3e-fb78-4e26-acb4-52c663715cf8', 'SCRUM', '2018-11-26 19:21:34', '2018-11-26 19:21:34');
-INSERT INTO `habilidades` VALUES ('12', '4681de40-f51e-4c9d-80db-7d10bfe22aaf', 'Mongo DB', '2018-11-26 19:22:09', '2018-11-26 19:22:09');
-INSERT INTO `habilidades` VALUES ('13', '5de977d1-5c19-4360-ac53-fa3867624e95', 'Express', '2018-11-26 19:22:28', '2018-11-26 19:22:28');
-INSERT INTO `habilidades` VALUES ('14', 'c504038f-af95-4ab7-8794-99fea1d6e633', 'Angular', '2018-11-26 19:22:47', '2018-11-26 19:22:47');
-INSERT INTO `habilidades` VALUES ('15', 'd7b0a4e4-ba86-4c65-898e-6a04c3f9faad', 'Node', '2018-11-26 19:23:02', '2018-11-26 19:23:02');
-INSERT INTO `habilidades` VALUES ('16', '1e5fd674-592f-4e99-b18c-9fbc00ca134c', 'React', '2018-11-26 19:23:17', '2018-11-26 19:23:17');
-INSERT INTO `habilidades` VALUES ('17', '4edb9c42-7638-44ab-ac28-17e46ae2516f', 'Redis', '2018-11-26 19:23:29', '2018-11-26 19:23:29');
+INSERT INTO `habilidades` VALUES ('1', 'PHP', '2018-11-26 19:18:22', '2018-11-26 19:18:22');
+INSERT INTO `habilidades` VALUES ('2', 'Laravel', '2018-11-26 19:18:57', '2018-11-26 19:18:57');
+INSERT INTO `habilidades` VALUES ('3', 'API RESTFUL', '2018-11-26 19:19:09', '2018-11-26 19:19:09');
+INSERT INTO `habilidades` VALUES ('4', 'HTML5', '2018-11-26 19:19:33', '2018-11-26 19:19:33');
+INSERT INTO `habilidades` VALUES ('5', 'CSS3', '2018-11-26 19:19:47', '2018-11-26 19:19:47');
+INSERT INTO `habilidades` VALUES ('6', 'jQuery', '2018-11-26 19:20:01', '2018-11-26 19:20:01');
+INSERT INTO `habilidades` VALUES ('7', 'AJAX', '2018-11-26 19:20:23', '2018-11-26 19:20:23');
+INSERT INTO `habilidades` VALUES ('8', 'JavaScript', '2018-11-26 19:20:40', '2018-11-26 19:20:40');
+INSERT INTO `habilidades` VALUES ('9', 'MySQL', '2018-11-26 19:20:58', '2018-11-26 19:20:58');
+INSERT INTO `habilidades` VALUES ('10', 'SSH', '2018-11-26 19:21:19', '2018-11-26 19:21:19');
+INSERT INTO `habilidades` VALUES ('11', 'SCRUM', '2018-11-26 19:21:34', '2018-11-26 19:21:34');
+INSERT INTO `habilidades` VALUES ('12', 'Mongo DB', '2018-11-26 19:22:09', '2018-11-26 19:22:09');
+INSERT INTO `habilidades` VALUES ('13', 'Express', '2018-11-26 19:22:28', '2018-11-26 19:22:28');
+INSERT INTO `habilidades` VALUES ('14', 'Angular', '2018-11-26 19:22:47', '2018-11-26 19:22:47');
+INSERT INTO `habilidades` VALUES ('15', 'Node', '2018-11-26 19:23:02', '2018-11-26 19:23:02');
+INSERT INTO `habilidades` VALUES ('16', 'React', '2018-11-26 19:23:17', '2018-11-26 19:23:17');
+INSERT INTO `habilidades` VALUES ('17', 'Redis', '2018-11-26 19:23:29', '2018-11-26 19:23:29');
 
 -- ----------------------------
 -- Table structure for menus
