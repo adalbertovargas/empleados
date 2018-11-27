@@ -75,7 +75,7 @@ INSERT INTO `data_rows` VALUES ('67', '8', 'id', 'text', 'Id', '1', '1', '1', '0
 INSERT INTO `data_rows` VALUES ('69', '8', 'nombre', 'text', 'Nombre', '1', '1', '1', '1', '1', '1', '{}', '3');
 INSERT INTO `data_rows` VALUES ('70', '8', 'created_at', 'timestamp', 'Created At', '0', '1', '1', '0', '0', '0', '{}', '4');
 INSERT INTO `data_rows` VALUES ('71', '8', 'updated_at', 'timestamp', 'Updated At', '0', '1', '1', '0', '0', '0', '{}', '5');
-INSERT INTO `data_rows` VALUES ('72', '7', 'empleado_belongstomany_habilidade_relationship', 'relationship', 'habilidades', '0', '1', '1', '1', '1', '1', '{\"model\":\"App\\\\Habilidade\",\"table\":\"habilidades\",\"type\":\"belongsToMany\",\"column\":\"id\",\"key\":\"id\",\"label\":\"nombre\",\"pivot_table\":\"empleado_habilidad\",\"pivot\":\"1\",\"taggable\":\"on\"}', '11');
+INSERT INTO `data_rows` VALUES ('72', '7', 'empleado_belongstomany_habilidade_relationship', 'relationship', 'habilidades', '0', '1', '1', '1', '1', '1', '{\"model\":\"App\\\\Habilidade\",\"table\":\"habilidades\",\"type\":\"belongsToMany\",\"column\":\"id\",\"key\":\"id\",\"label\":\"nombre\",\"pivot_table\":\"empleado_habilidade\",\"pivot\":\"1\",\"taggable\":\"on\"}', '11');
 
 -- ----------------------------
 -- Table structure for data_types
@@ -401,7 +401,6 @@ INSERT INTO `permission_role` VALUES ('47', '1');
 INSERT INTO `permission_role` VALUES ('48', '1');
 INSERT INTO `permission_role` VALUES ('49', '1');
 INSERT INTO `permission_role` VALUES ('50', '1');
-INSERT INTO `permission_role` VALUES ('51', '1');
 
 -- ----------------------------
 -- Table structure for roles
