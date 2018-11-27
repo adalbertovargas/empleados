@@ -25,13 +25,12 @@ empleados.adalbertovargas
 
 * Deployment instructions
 	1. Create database.
-	3. Execute, import `database/*.sql` db.
+	3. Execute, import `database/empleados.sql` db.
 	4. At Prodcution's server, pull project from Remote Branch Master.
 	8. Adjust `.env` file
 	10. Follow Laravel Config Docs.
 
-* Admin Login
-	- host/admin
+* Admin Login (Backoffice, Without skills scoring feature, it's not a JS App)
 	- admin@admin.com 
 	- password
 
@@ -39,15 +38,12 @@ empleados.adalbertovargas
 	- host/api/empleados
 	- host/api/habilidades
 
-* Notas:
-	- No quedó completada la funcionalidad para Registrar calificación de habilidades de los empleados.
+* LIVE
+	- Live at [http://empleados.adalbertovargas.com](http://empleados.adalbertovargas.com)
 
 ### Contribution guidelines & documentation ###
 
-
-* Database Key Fields:
-
-
+* Empleados REST API Docs: [See on Postman](https://documenter.getpostman.com/view/2046160/RzfasXYT)
 * Workflow: [Gitflow](http://nvie.com/posts/a-successful-git-branching-model/).
 * Framework: [Laravel 5.5](https://laravel.com/docs/5.5).
 * Admin: [Voyager 1.0](https://voyager.readme.io/docs).
