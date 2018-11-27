@@ -43,7 +43,7 @@ class HabilidadeController extends Controller
 
         $habilidad = Habilidade::create($input);
 
-        return $Habilidad;
+        return $habilidad;
     }
 
     /**
@@ -94,11 +94,9 @@ class HabilidadeController extends Controller
      */
     public function destroy($id)
     {
-        $empleado = Empleado::findorFail($id);
-        $empleado->delete();
+        $habilidad = Habilidade::findorFail($id);
+        $habilidad->delete();
 
-        return [
-            "message"    => "ok"
-        ];
+        return $habilidad;
     }
 }
