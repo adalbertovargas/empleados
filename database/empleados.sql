@@ -134,10 +134,10 @@ INSERT INTO `empleados` VALUES ('1', 'Rodrigo Perea', 'rodrigo@gmail.com', 'Fron
 INSERT INTO `empleados` VALUES ('2', 'Rogelio Medina', 'rogelio@gmail.com', 'Backend Developer', '1988-04-10', 'Oriente 202, La Cañada, Tulancingo de Bravo, Hidalgo México', '2018-11-26 19:34:21', '2018-11-26 19:34:21');
 
 -- ----------------------------
--- Table structure for empleado_habilidad
+-- Table structure for empleado_habilidade
 -- ----------------------------
-DROP TABLE IF EXISTS `empleado_habilidad`;
-CREATE TABLE `empleado_habilidad` (
+DROP TABLE IF EXISTS `empleado_habilidade`;
+CREATE TABLE `empleado_habilidade` (
   `empleado_id` int(10) unsigned NOT NULL,
   `habilidade_id` int(10) unsigned NOT NULL,
   `calificacion` int(10) unsigned DEFAULT NULL
