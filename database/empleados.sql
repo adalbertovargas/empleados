@@ -10,7 +10,7 @@ Target Server Type    : MYSQL
 Target Server Version : 50505
 File Encoding         : 65001
 
-Date: 2018-11-26 14:58:35
+Date: 2018-11-26 19:10:45
 */
 
 SET FOREIGN_KEY_CHECKS=0;
@@ -231,16 +231,11 @@ CREATE TABLE `menu_items` (
 -- ----------------------------
 -- Records of menu_items
 -- ----------------------------
-INSERT INTO `menu_items` VALUES ('1', '1', 'Dashboard', '', '_self', 'voyager-boat', null, null, '1', '2018-11-26 18:37:27', '2018-11-26 18:37:27', 'voyager.dashboard', null);
-INSERT INTO `menu_items` VALUES ('2', '1', 'Media', '', '_self', 'voyager-images', null, '5', '2', '2018-11-26 18:37:27', '2018-11-26 19:41:24', 'voyager.media.index', null);
 INSERT INTO `menu_items` VALUES ('3', '1', 'Users', '', '_self', 'voyager-person', null, null, '4', '2018-11-26 18:37:27', '2018-11-26 19:39:08', 'voyager.users.index', null);
-INSERT INTO `menu_items` VALUES ('4', '1', 'Roles', '', '_self', 'voyager-lock', null, '5', '1', '2018-11-26 18:37:27', '2018-11-26 19:41:23', 'voyager.roles.index', null);
-INSERT INTO `menu_items` VALUES ('5', '1', 'Tools', '', '_self', 'voyager-tools', null, null, '5', '2018-11-26 18:37:27', '2018-11-26 19:41:23', null, null);
 INSERT INTO `menu_items` VALUES ('6', '1', 'Menu Builder', '', '_self', 'voyager-list', null, '5', '3', '2018-11-26 18:37:27', '2018-11-26 19:41:24', 'voyager.menus.index', null);
 INSERT INTO `menu_items` VALUES ('7', '1', 'Database', '', '_self', 'voyager-data', null, '5', '4', '2018-11-26 18:37:27', '2018-11-26 19:41:24', 'voyager.database.index', null);
 INSERT INTO `menu_items` VALUES ('8', '1', 'Compass', '', '_self', 'voyager-compass', null, '5', '5', '2018-11-26 18:37:27', '2018-11-26 19:41:24', 'voyager.compass.index', null);
 INSERT INTO `menu_items` VALUES ('9', '1', 'BREAD', '', '_self', 'voyager-bread', null, '5', '6', '2018-11-26 18:37:27', '2018-11-26 19:41:24', 'voyager.bread.index', null);
-INSERT INTO `menu_items` VALUES ('10', '1', 'Settings', '', '_self', 'voyager-settings', null, null, '6', '2018-11-26 18:37:27', '2018-11-26 19:41:24', 'voyager.settings.index', null);
 INSERT INTO `menu_items` VALUES ('14', '1', 'Hooks', '', '_self', 'voyager-hook', null, '5', '7', '2018-11-26 18:37:44', '2018-11-26 19:41:24', 'voyager.hooks', null);
 INSERT INTO `menu_items` VALUES ('15', '1', 'Empleados', '', '_self', 'voyager-people', null, null, '2', '2018-11-26 18:52:16', '2018-11-26 19:39:02', 'voyager.empleados.index', null);
 INSERT INTO `menu_items` VALUES ('16', '1', 'Habilidades', '', '_self', 'voyager-wand', null, null, '3', '2018-11-26 19:09:07', '2018-11-26 19:39:05', 'voyager.habilidades.index', null);
@@ -449,14 +444,14 @@ CREATE TABLE `settings` (
 -- Records of settings
 -- ----------------------------
 INSERT INTO `settings` VALUES ('1', 'site.title', 'Site Title', 'Empleados', '', 'text', '1', 'Site');
-INSERT INTO `settings` VALUES ('2', 'site.description', 'Site Description', 'Ejercicio', '', 'text', '2', 'Site');
-INSERT INTO `settings` VALUES ('3', 'site.logo', 'Site Logo', '', '', 'image', '3', 'Site');
+INSERT INTO `settings` VALUES ('2', 'site.description', 'Site Description', 'NullData', '', 'text', '2', 'Site');
+INSERT INTO `settings` VALUES ('3', 'site.logo', 'Site Logo', 'settings\\November2018\\ZXSVLphtOTIzEFN63F2w.png', '', 'image', '3', 'Site');
 INSERT INTO `settings` VALUES ('4', 'site.google_analytics_tracking_id', 'Google Analytics Tracking ID', null, '', 'text', '4', 'Site');
-INSERT INTO `settings` VALUES ('5', 'admin.bg_image', 'Admin Background Image', '', '', 'image', '5', 'Admin');
+INSERT INTO `settings` VALUES ('5', 'admin.bg_image', 'Admin Background Image', 'settings\\November2018\\KWjrMY9c9TRHfGcAshHk.png', '', 'image', '5', 'Admin');
 INSERT INTO `settings` VALUES ('6', 'admin.title', 'Admin Title', 'Empleados', '', 'text', '1', 'Admin');
-INSERT INTO `settings` VALUES ('7', 'admin.description', 'Admin Description', 'Welcome to Voyager. The Missing Admin for Laravel', '', 'text', '2', 'Admin');
+INSERT INTO `settings` VALUES ('7', 'admin.description', 'Admin Description', 'NullData', '', 'text', '2', 'Admin');
 INSERT INTO `settings` VALUES ('8', 'admin.loader', 'Admin Loader', '', '', 'image', '3', 'Admin');
-INSERT INTO `settings` VALUES ('9', 'admin.icon_image', 'Admin Icon Image', '', '', 'image', '4', 'Admin');
+INSERT INTO `settings` VALUES ('9', 'admin.icon_image', 'Admin Icon Image', 'settings\\November2018\\3rmAR4rU3Yv95pLHlFcj.png', '', 'image', '4', 'Admin');
 INSERT INTO `settings` VALUES ('10', 'admin.google_analytics_client_id', 'Google Analytics Client ID (used for admin dashboard)', null, '', 'text', '1', 'Admin');
 
 -- ----------------------------
